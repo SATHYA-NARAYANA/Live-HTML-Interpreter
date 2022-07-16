@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&effect=neon|outline|emboss|shadow-multiple">
+
+<style>
+
+body {
+  font-family: "Sofia",sans-serif;
+  background: #8acdea;
+}
+
+div#data_property_1 {
+text-align: center;
+
+height: 50%;
+margin: auto;
+}
+
+textarea#data_property_4{
+margin:auto;
+width: 40%;
+height: 40%;
+font-size: 15px;
+background: rgb(4, 255, 201);
+color: rgb(10, 9, 9);
+
+}
+
+textarea#data_property_5{
+text-align: center;
+}
+
+</style>
+
+<script>
+    function send() 
+    {
+          live_data = document.getElementById("data_property_4");
+          display_data = document.getElementById("data_property_5");
+          display_data.innerHTML = live_data.value;
+    }
+</script>
+
+<body>
+
+<div id="data_property_1">
+  <marquee id ="data_property_2">
+    <img src="html bg.svg" style="width:15%" style="height:15%">
+ </marquee>
+
+
+ <h1 class="font-effect-shadow-multiple">Live HTML Interpreter</h1>
+
+<div>  <div>
+
+<div id="data_property_3">
+<textarea id="data_property_4" onkeyup="send()"></textarea>
+</div>
+
+<pre>
+
+
+
+</pre>
+ <h1> 
+    <centre>
+      Coding Output
+    </centre>
+  </h1>
+
+<div id="data_property_5"> </data_property_5>
+
+</div>
+
+</body>
